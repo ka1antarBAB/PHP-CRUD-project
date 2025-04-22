@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+#users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+table{
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+tr{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.edit_btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete_btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.edit_btn:hover{
+    background-color: darkorange;
+    transform: scale(1.05);
+}
+.delete_btn:hover{
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.add_user_btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.add_user_btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.add-user-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
